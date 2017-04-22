@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Random thoughts of a tinkerist</title>
+    <description>technical hobbyist blog where I scribble my thoughts, opinions, inspiration, motivation</description>
+    <link>http://decebel.github.io/</link>
+    <atom:link href="http://decebel.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 22 Apr 2017 13:12:28 -0400</pubDate>
+    <lastBuildDate>Sat, 22 Apr 2017 13:12:28 -0400</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Setting up the table for NN</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;download anaconda python&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;setup tensorflow&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;source activate tensorflow&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;jupyter notebook&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;embedding p5.js&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;TODO: RNN understand&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;How I went wrong with 2 weeks holidays and started learning unreal for week 1 and unity for week 2.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Thu, 30 Nov 2017 00:00:00 -0500</pubDate>
+        <link>http://decebel.github.io/2017/Setup-for-NN/</link>
+        <guid isPermaLink="true">http://decebel.github.io/2017/Setup-for-NN/</guid>
+        
+        
+        <category>NN+Setup</category>
+        
+      </item>
+    
+      <item>
+        <title>Quotes from an old diary</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;While cleaning up my drawer, I found an old diary where there a few quotes that were scribbled on random pages.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;On Fractions&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The best of my life is almost all the hope, mystery, fears, laughter and happiness with you.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A third of your live is almost all of mine&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A third of one’s life is almost of half of another.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;TODO: Scan a copy of the page&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Thu, 30 Nov 2017 00:00:00 -0500</pubDate>
+        <link>http://decebel.github.io/2017/Quotes-from-an-old-diary/</link>
+        <guid isPermaLink="true">http://decebel.github.io/2017/Quotes-from-an-old-diary/</guid>
+        
+        
+        <category>Motivation+Quotes</category>
+        
+      </item>
+    
+      <item>
+        <title>Neural Network Gradient Descent</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;This is a placeholder for flocking behavior simulation for &lt;strong&gt;Art+Code&lt;/strong&gt;, inspired by many sources and implemented in javascript.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Learning NN the easy way.
+In Keras, why do we need to provide an output when the input_dim is provided. And when can this be different from the provided input.&lt;/p&gt;
+
+&lt;p&gt;For example:
+model = Sequential()
+model.add(Dense(12, input_dim=8, init=’uniform’, activation=’relu’))&lt;/p&gt;
+
+&lt;p&gt;Here the input is 8 features, so the output should be 8 too. But the output is 12 instead. 
+Seems what is happening is:
+[input: 8 features -&amp;gt; InputLayer -&amp;gt; output: 8 features ] -&amp;gt; [input: 8 -&amp;gt; Dense -&amp;gt; output: 12]&lt;/p&gt;
+
+&lt;paragraph&gt;
+How do we visualize the model:
+
+To any model you build, do the following:
+&lt;pre&gt;&lt;code&gt;
+from keras.utils.visualize_util import plot
+plot(model, show_shapes=True, to_file=&#39;model.png&#39;)
+&lt;/code&gt;
+&lt;/pre&gt;
+If you are on mac, you need to install pydot and graphviz.
+
+for graphviz, 
+&lt;pre&gt;&lt;code&gt;
+brew install graphviz
+&lt;/code&gt;
+&lt;/pre&gt;
+
+for pydot
+&lt;pre&gt;&lt;code&gt;
+conda install pydot
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+&lt;/paragraph&gt;
+</description>
+        <pubDate>Thu, 26 Jan 2017 00:00:00 -0500</pubDate>
+        <link>http://decebel.github.io/2017/neural-network-Neural-Network-Gradient-Descent/</link>
+        <guid isPermaLink="true">http://decebel.github.io/2017/neural-network-Neural-Network-Gradient-Descent/</guid>
+        
+        
+        <category>Howdy+NeuralNet</category>
+        
+      </item>
+    
+      <item>
+        <title>Sound Projects</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Athelete Work out sound
+Sound of smoke, Fog, 
+Manhattan + Tabla in Ableton live
+Max Programming&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+        <link>http://decebel.github.io/2017/Sound-Bytes/</link>
+        <guid isPermaLink="true">http://decebel.github.io/2017/Sound-Bytes/</guid>
+        
+        
+        <category>Code+Sound+Light</category>
+        
+      </item>
+    
+      <item>
+        <title>Human Particle Flow</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Inspired by Nike Jogging man, RedTag Software Gym buddy for human particle effects, Athelete pushing hard to try more, Aint on sunshine video - Gold dust, Hyundai Ad on motiongrapher&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Outline effects&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Glow effects&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Optical flow effects&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Smoke&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Fog&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Snow flakes effects&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Organic transform effects&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+        <link>http://decebel.github.io/2017/Particle-Effects/</link>
+        <guid isPermaLink="true">http://decebel.github.io/2017/Particle-Effects/</guid>
+        
+        
+        <category>Code+Art</category>
+        
+      </item>
+    
+      <item>
+        <title>Neural Network Backprop</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;This is a placeholder for flocking behavior simulation for &lt;strong&gt;Art+Code&lt;/strong&gt;, inspired by many sources and implemented in javascript.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Learning NN the easy way.
+In Keras, why do we need to provide an output when the input_dim is provided. And when can this be different from the provided input.&lt;/p&gt;
+
+&lt;p&gt;For example:
+model = Sequential()
+model.add(Dense(12, input_dim=8, init=’uniform’, activation=’relu’))&lt;/p&gt;
+
+&lt;p&gt;Here the input is 8 features, so the output should be 8 too. But the output is 12 instead. 
+Seems what is happening is:
+[input: 8 features -&amp;gt; InputLayer -&amp;gt; output: 8 features ] -&amp;gt; [input: 8 -&amp;gt; Dense -&amp;gt; output: 12]&lt;/p&gt;
+
+&lt;paragraph&gt;
+How do we visualize the model:
+
+To any model you build, do the following:
+&lt;pre&gt;&lt;code&gt;
+from keras.utils.visualize_util import plot
+plot(model, show_shapes=True, to_file=&#39;model.png&#39;)
+&lt;/code&gt;
+&lt;/pre&gt;
+If you are on mac, you need to install pydot and graphviz.
+
+for graphviz, 
+&lt;pre&gt;&lt;code&gt;
+brew install graphviz
+&lt;/code&gt;
+&lt;/pre&gt;
+
+for pydot
+&lt;pre&gt;&lt;code&gt;
+conda install pydot
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+&lt;/paragraph&gt;
+</description>
+        <pubDate>Sat, 26 Nov 2016 00:00:00 -0500</pubDate>
+        <link>http://decebel.github.io/2016/neural-network-backprop/</link>
+        <guid isPermaLink="true">http://decebel.github.io/2016/neural-network-backprop/</guid>
+        
+        
+        <category>Howdy+NeuralNet</category>
+        
+      </item>
+    
+      <item>
+        <title>Story Telling .. Cue Card Style</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;This is a placeholder for flocking behavior simulation for &lt;strong&gt;Art+Code&lt;/strong&gt;, inspired by many sources and implemented in javascript.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Wed, 16 Nov 2016 00:00:00 -0500</pubDate>
+        <link>http://decebel.github.io/2016/story-telling-cue-card-style/</link>
+        <guid isPermaLink="true">http://decebel.github.io/2016/story-telling-cue-card-style/</guid>
+        
+        
+        <category>Code+Interactive</category>
+        
+      </item>
+    
+      <item>
+        <title>Steering Behavior</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;This is a placeholder for steering behavior simulation for &lt;strong&gt;Art+Code&lt;/strong&gt;, inspired by many sources and implemented in javascript.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Wed, 16 Nov 2016 00:00:00 -0500</pubDate>
+        <link>http://decebel.github.io/2016/steering-behavior/</link>
+        <guid isPermaLink="true">http://decebel.github.io/2016/steering-behavior/</guid>
+        
+        
+        <category>Code+Simulation</category>
+        
+      </item>
+    
+      <item>
+        <title>Self Driven Car Play - Neural Networks </title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;TODO&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Wed, 16 Nov 2016 00:00:00 -0500</pubDate>
+        <link>http://decebel.github.io/2016/self-driven-car-play-neural-network/</link>
+        <guid isPermaLink="true">http://decebel.github.io/2016/self-driven-car-play-neural-network/</guid>
+        
+        
+        <category>Howdy+NeuralNet</category>
+        
+      </item>
+    
+      <item>
+        <title>Physics Engine</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;This is a placeholder for flocking behavior simulation for &lt;strong&gt;Art+Code&lt;/strong&gt;, inspired by many sources and implemented in javascript.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Wind
+Friction
+Gravity
+Memo video&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Wed, 16 Nov 2016 00:00:00 -0500</pubDate>
+        <link>http://decebel.github.io/2016/physics-engine/</link>
+        <guid isPermaLink="true">http://decebel.github.io/2016/physics-engine/</guid>
+        
+        
+        <category>Code+Simulation</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,74 @@
+
+# SEO settings
+title: "Random thoughts of a tinkerist"
+title2: "" # default: ""
+description: "technical hobbyist blog where I scribble my thoughts, opinions, inspiration, motivation"
+keywords: "web, decebel, webgl, machine learning, deep learning, neural network, creative coding"
+url: http://decebel.github.io # site url
+baseurl: null #"/" # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
+
+google_analytics: UA-XXXXX-XX
+repo: http://github.com/decebel
+disqus_shortname: null 
+twitter_username: "e_dece"
+comments: true
+future: true
+
+#collections:
+#  - creativecoding
+#  - math
+#  - neuralnet
+
+# collections:
+#   creativecoding:
+#     output: true
+#     permalink: /creativecoding/:path/
+#   neuralnet:
+#     output: true
+#     permalink: /neuralnet/:path/
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Decebel"
+  job      : ""
+  #bio      : "That’s what a ship is, you know. It’s not just a keel and a hull and a deck and sails. That’s what a ship needs. But what a ship is…what the Black Pearl really is…is freedom.” – Jack Sparrow"
+  thumb    : /images/author.jpg
+  email    : decebel@gmail.com
+  url      : http://decebel.github.io
+  github   : http://github.com/decebel
+  twitter  : "#" #http://twitter.com/e_dece
+  facebook : "#" #https://www.facebook.com/profile.php?id=
+  linkedin : "#" #http://linkedin.com/
+
+
+# social settings
+og_locale: "en_US"
+twitter_card: "summary_large_image"
+twitter_site: "@e_dece"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
